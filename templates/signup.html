@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация пользователя</title>
+
+</head>
+<body>
+    {% if message %}
+    {{message}}
+    {% endif %}
+  <form method="post">
+        <p>Логин:<input type="text" name="login"></p>
+        <p>Email:<input type="text" name="mail"></p>
+        <p>Пароль:<input type="password" name="password"></p>
+        <p>Подтвердите пароль:<input type="password" name="pass_confirm"></p>
+      <input type="submit">
+  </form>
+</body>
+</html>
